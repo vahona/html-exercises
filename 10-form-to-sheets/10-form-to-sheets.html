@@ -15,6 +15,63 @@
         The google sheet can be found at: https://docs.google.com/spreadsheets/d/1Vnkb5rE1kgXFMt2So3RwfvfLwayVtATt1o9NM-ry9UI/edit?usp=sharing
         Create a field for each cell in the Google Sheet.
       -->
+      <label>
+        contributor:
+      <br><input type="text" name="contributor" value="Sugi">
+      </label>
+      <p>
+        Genre:
+      <label for="genre"></label>
+        <br><select id="genre">
+          <option value="genre">Batrelaka</option>
+          <option value="roots_music">Roots_music</option>
+          <option value="slow">Slow</option>
+          <option value="tsapiky">Tsapiky</option>
+          <option value="kilalaky">Kilalaky</option>
+          <option value="basesa">Basesa</option>
+          <option value="vakodrazana">Vakodrazana</option>
+          <option value="hira_gasy">Hira_gasy</option>
+          <option value="reggae">Reggae</option>
+          <option value="malesa">Malesa</option>
+          <option value="zouk_love">Zouk_love</option>
+          <option value="tabolaka">Tapolaka</option>
+          <option value="folk_fusion">Folk_fusion</option>
+          <option value="rock">Rock</option>
+        </select>
+      </P>
+      <p>
+        Artist-id:
+        <label>
+         <br> <input type="text" name="artist_id" required>
+        </label>
+      </p>
+      <p>
+        Artist-name:
+        <label>
+          <br><input type="text" name="artist_name" required>
+        </label>
+      </p>
+      <p>
+        photo_url:
+        <label>
+         <br><input type="text" name="photo_url">
+        </label>
+      </p>
+      <p>
+        Biography:
+      </P>
+      <p>
+        <label>
+        <textarea rows="20" cols="40" name="biography"></textarea>
+        </label>
+      </p>
+      <p>
+        Website:
+        <label>
+          <input type="url" name="website">
+        </label>
+      </p>
+
 
       <button type="submit">Save</button>
     </form>
