@@ -18,7 +18,7 @@
 
       <!-- In this example, the 'Wait!' needs stressing when vocalised -->
       <p>
-        <i><b>"Wait!"</i></b> shouted Jesse.
+        <q><em>Wait!</em></q> shouted Jesse.
       </p>
 
       <hr>
@@ -26,7 +26,7 @@
       <!-- It's a good idea to tell a computer how to read a datetime: -->
       <p>
 
-        The time is now ,<time datetime="2:00"> 2:00 pm</time> on <time datetime="2020-2-12"> February 12th 2020</time>.
+        The time is now ,<time datetime="2020-02-12T14:00:00+03:00"> </time>wednesday.
 
       </p>
 
@@ -34,7 +34,7 @@
 
       <!-- What do 'H' and 'O' mean here? -->
       <p>
-        The elements <var> H </var> and <var> O,</var> bond as H20, or water (as it is colloquaially known).
+        The elements <abbr title="Hydrogene">H</abbr> and <abbr title="oxygene"> O,</abbr> bond as H20, or<i> water </i> (as it is colloquaially known).
       </p>
 
       <hr>
@@ -44,13 +44,13 @@
       <p>
         Editor's Notes:<br>
 
-        Please use<kbd> CTRL+B</kbd> to bold this word:<b> Critical<br></b>
-        Please use<kbd> CTRL+I </kbd> italicise this word:<i> Doubtful<br></i>
+        Please use<kbd> CTRL </kbd> + <kbd> B</kbd> to bold this word:<b> Critical<br></b>
+        Please use<kbd> CTRL </kbd> + <kbd> I </kbd> italicise this word:<i> Doubtful<br></i>
 
-        Please<kbd> underline </kbd> this word:<u> Thinking<br></u>
-        Please<kbd> put a line</kbd> through this word:<s> Assuming<br></s>
+        Please underline  this word:<u> Thinking<br></u>
+        Please put a line through this word:<s> Assuming<br></s>
 
-        Please show that the word <b>'slow'</b><kbd> was removed, and 'quick' added</kbd> in its place in the following sentence:
+        Please show that the word 'slow' was removed, and 'quick' added in its place in the following sentence:
         "The <del> slow </del> <ins> slow <slow> </ins> brown fox jumped over the lazy dog."<br>
       </p>
 
@@ -59,12 +59,15 @@
       <!-- We can do the same with samples of code, even maintaining the whitespace: -->
 
       <p>
-        "Woah! 'that' was unexpected!" exclaimed Keith.<br>
-        Curiously, Jesse looked at<code> the output</code> on Keith's screen and it said:<br>
-
-          Unexpected value for argument 'that'
-            - in function clickHandler, line 12
-            - called from function anonymous, line 34
+       <q><em>Woah!</em>
+         <code>'that'</code>
+          was unexpected!</q> exclaimed Keith.<br>
+        Curiously, Jesse looked at the output on Keith's screen and it said:<br>
+  <pre>
+  Unexpected value for argument <code>'that'</code>
+     - in function <code> clickHandler,</code> line 12
+     - called from function anonymous, line 34
+  </pre>
       </p>
 
       <hr>
@@ -76,7 +79,7 @@
       <ul>
         <li>
           <a href="#bell-222">Bell 222</a>:<br>
-          The Model 222 is a <mark> helicopter </mark> made by the Bell Helicopter Corporation.
+          The Model 222 is a <mark> helicopter </mark> made by the Bell <mark> Helicopter </mark> Corporation.
         </li>
       </ul>
 
