@@ -16,22 +16,28 @@
     <main>
       <header>
         <h2>Log in</h2>
-        <p>Please log in before accessing our website</p>
+          <p>Please log in before accessing our website</p>
       </header>
 
       <!-- Add your log in form here -->
       <form action="/log-in" method="POST">
-      <p>
-       <b><label for="Username">Username:</label></b>
-        <br><input type="text" id="Username" name="Username" required>
-      </P>
-      <p>
-       <b><label for="password"> Password:</label></b>
-        <br><input type="text" id="password" name="Password" required>
-      </p>
-
-
-        <p><input type="submit" value="loging"></p>
+        <p>
+          <label for="username">
+            Username:
+          </label>
+          <br>
+            <input type="text" id="username" name="username" required>
+        </p>
+        <p>
+          <label for="password">
+            Password:
+          </label>
+          <br>
+            <input type="text" id="password" name="password" required>
+        </p>
+        <p>
+          <input type="submit" value="loging">
+        </p>
       </form>
     </main>
   </body>

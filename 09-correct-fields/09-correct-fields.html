@@ -32,7 +32,7 @@
         <fieldset>
           <legend>Simple text: Nickname</legend>
           <!-- The server is expecting plain text here with the `name` of `nickname`. Linebreaks aren't allowed. -->
-          <input type="text" id="Nickname" name="Nickname" required>
+          <input type="text" name="nickname" required>
         </fieldset>
         <fieldset>
           <legend>Multi-line Text: Biography</legend>
@@ -45,28 +45,28 @@
           <legend>Mobile phone number</legend>
           <!-- The server is expecting the user's `mobile_phone` here. -->
           <label>
-          <input type="number" id="number" name="Number" required>
+            <input type="tel" name="mobile_phone_number" required>
           </label>
         </fieldset>
         <fieldset>
           <legend>Website</legend>
           <!-- The server is expecting the user's `website` address here. -->
           <label>
-         <input type="url" id=website name="website" required>
+            <input type="url" id=website name="website" required>
           </label>
         </fieldset>
         <fieldset>
           <legend>Date of birth</legend>
           <!-- The server is expecting the user's `date_of_birth` here. -->
           <label>
-          <input type="date" id="date" name="date" required>
+            <input type="date" id="date" name="date" required>
           </label>
         </fieldset>
         <fieldset>
           <legend>Age</legend>
           <!-- The server is expecting the user's `age` in years here. -->
           <label>
-          <input type="date" id="age" name="age" required>
+            <input type="number" name="age" required>
           </label>
         </fieldset>
         <div>
@@ -85,15 +85,15 @@
            <li>
            <label>
              <input type="Radio" name="choice-radio" value="true" required checked>
-             True
+               True
            </label>
           </li>
           </ul>
          <ul>
            <li>
            <label>
-             <input type="Radio" name="choice-radio" value="false" required checked>
-             False
+              <input type="Radio" name="choice-radio" value="false" required>
+                False
            </label>
           </li>
         </ul>
@@ -106,7 +106,7 @@
           <input type="checkbox" name="confirm" value="true">
           Confirm
             </label>
-          </P>
+          </p>
         </fieldset>
         <fieldset>
           <legend>Yes or No</legend>
@@ -148,35 +148,38 @@
               - `plums`: Plums
           -->
           Fruits choices:
-        <label>
           <ul>
             <li>
-              <input type="radio" name="fruit" value="apples">
-              Apples
+              <label>
+                <input type="radio" name="fruit" value="apples">
+                  Apples
+              </label>
             </li>
           </ul>
-          <label>
             <ul>
               <li>
-                <input type="radio" name="fruit" value="bananas">
-                Bananas
+                <label>
+                  <input type="radio" name="fruit" value="bananas">
+                    Bananas
+                </label>
               </li>
             </ul>
-            <label>
               <ul>
                 <li>
-                  <input type="radio" name="fruit" value="grapes">
-                  Grapes
+                  <label>
+                    <input type="radio" name="fruit" value="grapes">
+                      Grapes
+                  </label>
                 </li>
               </ul>
-              <label>
                 <ul>
                   <li>
-                    <input type="radio" name="fruit" value="plums">
-                    Plams
+                    <label>
+                      <input type="radio" name="fruit" value="plums">
+                        Plams
+                    </label>
                   </li>
                 </ul>
-        </label>
             </fieldset>
         <fieldset>
           <legend>Large list of values</legend>
@@ -192,11 +195,9 @@
               - `robin`: Robins
               - `swallow`: Swallows
           -->
-          Birds
+          <p>Birds choices:</p>
           <label>
             <select name="bird" >
-              <option value="none"> please choose an option
-              </option>
               <option value="duck">Ducks</option>
               <option value="eagle">Eagles</option>
               <option value="heron">Herons</option>
@@ -230,23 +231,19 @@
           Fruits choices:
           <ul>
             <li>
-              <input type="checkbox" id="apples" name="apples" checked>
+              <input type="checkbox" id="apples" name="apples" >
               <label for="apples">Apples</label>
             </li>
-          </ul>
-          <ul>
             <li>
-              <input type="checkbox" id="bananas" name="bananas" checked>
+              <input type="checkbox" id="bananas" name="bananas">
               <label for="bananas">Bananas</label>
             </li>
-          </ul><ul>
             <li>
-              <input type="checkbox" id="grapes" name="grapes" checked>
+              <input type="checkbox" id="grapes" name="grapes">
               <label for="grapes">Grapes</label>
             </li>
-          </ul><ul>
             <li>
-              <input type="checkbox" id="plums" name="plums" checked>
+              <input type="checkbox" id="plums" name="plums">
               <label for="plums">Plums</label>
             </li>
           </ul>
@@ -265,50 +262,19 @@
               - `robin`: Robins
               - `swallow`: Swallows
           -->
-          Birds choices:
-          <ul>
-            <li>
-              <input type="checkbox" id="duck" name="duck" checked>
-              <label for="duck">Ducks</label>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <input type="checkbox" id="eagle" name="eagle" checked>
-              <label for="eagle">Agles</label>
-            </li>
-          </ul><ul>
-            <li>
-              <input type="checkbox" id="heron" name="heron" checked>
-              <label for="heron">Herons</label>
-            </li>
-          </ul><ul>
-            <li>
-              <input type="checkbox" id="gull" name="gull" checked required>
-              <label for="gull">Gulls</label>
-            </li>
-          </ul><ul>
-            <li>
-              <input type="checkbox" id="pigeon" name="pigeon" checked>
-              <label for="pigeon">Pigeons</label>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <input type="checkbox" id="raven" name="raven" checked>
-              <label for="raven">Ravens</label>
-            </li>
-          </ul><ul>
-            <li>
-              <input type="checkbox" id="robin" name="robin" checked>
-              <label for="robin">Robins</label>
-            </li>
-          </ul><ul>
-            <li>
-              <input type="checkbox" id="swallow" name="swallow" checked>
-              <label for="swallow">Swallows</label>
-            </li>
-          </ul>
+          <p>Birds choices:</p>
+          <label>
+            <select multiple name="bird" >
+              <option value="duck">Ducks</option>
+              <option value="eagle">Eagles</option>
+              <option value="heron">Herons</option>
+              <option value="gull">Gulls</option>
+              <option value="pigeon">Pigeon</option>
+              <option value="raven">Ravens</option>
+              <option value="robin">Robins</option>
+              <option value="swallow">Swallows</option>
+            </select>
+          </label>
         </fieldset>
         <div>
           <button type="submit" name="form" value="multiple">Send</button>
@@ -325,7 +291,7 @@
             The server is expecting a hidden `signed=true` pair here.
           -->
         <label>
-          <input id="true" name="signed" type="hidden" value="true">
+          <input name="signed" type="hidden" value="true">
         </label>
         </fieldset>
         <fieldset>
@@ -333,8 +299,8 @@
           <!--
             The server is expecting at least one file here, with the name of `photos`.
           -->
-          <label for="file">
-            <input type="file" id=file name="photos">
+          <label>
+            <input type="file" name="photos">
           </label>
         </fieldset>
         <fieldset>
@@ -343,7 +309,7 @@
             The server is expecting at a numerical value for `bearing` between 0 and 359
           -->
           <label>
-          <input type="range" name="bearing" min="0" max="359" step="50">
+          <input type="range" name="bearing" min="0" max="359">
           </label>
         </fieldset>
         <fieldset>

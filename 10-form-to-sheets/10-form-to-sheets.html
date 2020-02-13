@@ -15,20 +15,18 @@
         The google sheet can be found at: https://docs.google.com/spreadsheets/d/1Vnkb5rE1kgXFMt2So3RwfvfLwayVtATt1o9NM-ry9UI/edit?usp=sharing
         Create a field for each cell in the Google Sheet.
       -->
-        Contributor:
-      <br><input type="hidden" name="contributor" value="Sugi">
+      <input type="hidden" name="contributor" value="Sugi">
       <p>
         Genre:
-      <label for="genre"></label>
-        <br><select id="genre">
-          <option value="genre">Batrelaka</option>
-          <option value="roots_music">Roots_music</option>
+      <label for="genre">
+        <br>
+        <select id="genre">
+          <option value="batrelaka">Batrelaka</option>
           <option value="slow">Slow</option>
           <option value="tsapiky">Tsapiky</option>
           <option value="kilalaky">Kilalaky</option>
           <option value="basesa">Basesa</option>
           <option value="vakodrazana">Vakodrazana</option>
-          <option value="hira_gasy">Hira_gasy</option>
           <option value="reggae">Reggae</option>
           <option value="malesa">Malesa</option>
           <option value="zouk_love">Zouk_love</option>
@@ -36,24 +34,31 @@
           <option value="folk_fusion">Folk_fusion</option>
           <option value="rock">Rock</option>
         </select>
+      </label>
       </P>
       <p>
-        Artist-id:
+        Artist's ID:
         <label>
          <br> <input type="text" name="artist_id" required>
         </label>
+        <br>
+          Please put the ID of the artist here!
       </p>
       <p>
-        Artist-name:
+        Artist'S Name:
         <label>
           <br><input type="text" name="artist_name" required>
         </label>
+        <br>
+          You can enter the artist's Name here
       </p>
       <p>
-        Photo-url:
+        Photo-URL:
         <label>
-         <br><input type="text" name="photo_url">
+         <br><input type="text" name="photo_url" required>
         </label>
+        <br>
+          Please! enter the artist's photo-URL
       </p>
       <p>
         Artist's Biography:
@@ -62,15 +67,18 @@
         <label>
         <textarea rows="20" cols="40" name="biography"></textarea>
         </label>
+        <br>
+          You can write the artist's information here.
       </p>
       <p>
        Artist's Website:
         <label>
+          <br>
           <input type="url" name="website">
         </label>
+        <br>
+          You can enter the Artist's website or home page here
       </p>
-
-
       <button type="submit">Save</button>
     </form>
   </body>
