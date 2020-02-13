@@ -18,45 +18,49 @@
 
       <!-- In this example, the 'Wait!' needs stressing when vocalised -->
       <p>
-        "Wait!" shouted Jesse.
+        <i><b>"Wait!"</i></b> shouted Jesse.
       </p>
 
       <hr>
 
       <!-- It's a good idea to tell a computer how to read a datetime: -->
       <p>
-        The time is now 2pm, on Wednesay the 12th of February, 2020.
+
+        The time is now ,<time datetime="2:00"> 2:00 pm</time> on <time datetime="2020-2-12"> February 12th 2020</time>.
+
       </p>
 
       <hr>
 
       <!-- What do 'H' and 'O' mean here? -->
       <p>
-        The elements H and O, bond as H20, or water (as it is colloquaially known).
+        The elements <var> H </var> and <var> O,</var> bond as H20, or water (as it is colloquaially known).
       </p>
 
       <hr>
 
       <!-- Sometimes we just want to make something look a certain way -->
+
       <p>
         Editor's Notes:<br>
 
-        Please use CTRL+B to bold this word: Critical<br>
-        Please use CTRL+I to italicise this word: Doubtful<br>
+        Please use<kbd> CTRL+B</kbd> to bold this word:<b> Critical<br></b>
+        Please use<kbd> CTRL+I </kbd> italicise this word:<i> Doubtful<br></i>
 
-        Please underline this word: Thinking<br>
-        Please put a line through this word: Assuming<br>
+        Please<kbd> underline </kbd> this word:<u> Thinking<br></u>
+        Please<kbd> put a line</kbd> through this word:<s> Assuming<br></s>
 
-        Please show that the word 'slow' was removed, and 'quick' added in its place in the following sentence:
-        "The slow brown fox jumped over the lazy dog."<br>
+        Please show that the word <b>'slow'</b><kbd> was removed, and 'quick' added</kbd> in its place in the following sentence:
+        "The <del> slow </del> <ins> slow <slow> </ins> brown fox jumped over the lazy dog."<br>
       </p>
 
       <hr>
 
       <!-- We can do the same with samples of code, even maintaining the whitespace: -->
+
       <p>
         "Woah! 'that' was unexpected!" exclaimed Keith.<br>
-        Curiously, Jesse looked at the output on Keith's screen and it said:<br>
+        Curiously, Jesse looked at<code> the output</code> on Keith's screen and it said:<br>
 
           Unexpected value for argument 'that'
             - in function clickHandler, line 12
@@ -67,12 +71,12 @@
 
       <!-- We can add helpful markup to highlight words -->
       <p>
-        Your search term: 'Helicopter' was found in the following documents:
+        Your search term: <mark>'Helicopter'</mark> was found in the following documents:
       </p>
       <ul>
         <li>
           <a href="#bell-222">Bell 222</a>:<br>
-          The Model 222 is a helicopter made by the Bell Helicopter Corporation.
+          The Model 222 is a <mark> helicopter </mark> made by the Bell Helicopter Corporation.
         </li>
       </ul>
 
