@@ -24,6 +24,12 @@
             - "About us" links to "/about"
             - "Contact us" links to "/contact"
         -->
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/services">Our services</a></li>
+          <li><a href="/about">About us</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
       </section>
 
       <section>
@@ -41,8 +47,57 @@
               - Prefer to not disclose, "na"
             - Photo, optional, as "profile_photo". The user can upload a photo if they want. We only accept PNGs, JPGs, and WebP formats.
         -->
+        <form action="profile/save" method="POST"></form>
+          <p>
+            <label>
+              Profile_first_name:
+              <br><input type="text" name="profile_first_name" required>
+            </label>
+            <br>
+            <label><br>
+              Profile_family_name:
+              <br><input type="text" name="profile_family_name" required>
+            </label>
+          </p>
+          <p>
+              Email:
+            <br><input type="email" name="username" required>
+          </p>
+          <p>
+             <label>
+               Phone number
+             </label>
+             <br><input type="tel" name="phone">
+          </p>
+          Gender:
+          <ul>
+            <li>
+              <label>
+                <input type="radio" name="m">
+                  Male
+              </label>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <label>
+                <input type="radio" name="f">
+                  Famale
+              </label>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <label>
+                <input type="radio" name="na">
+                  Prefer to not disclose
+              </label>
+            </li>
+          </ul>
+      <small>
+         You can choose genre here
+      </small>
       </section>
-
       <section>
         <h2>An excerpt</h2>
         <!--
@@ -54,6 +109,10 @@
 
           "If you weren't my mother, this would be illegal," you'll say, seething as you unwind the power cord and plug it into the wall outlet.
         -->
+             <q>The only reason you had me was so you could get a maid you wouldn't have to pay,</q>
+              you'll say bitterly, dragging the vacuum cleaner out of the closet.<br>
+            <q>That's right!</q> I'll say. <q>Thirteen years ago I knew the carpets would need vacuuming around now, and having a baby seemed to be the cheapest and easiest way to get the job done. Now kindly get on with it.</q><br>
+            <q>If you weren't my mother, this would be illegal,</q> you'll say, seething as you unwind the power cord and plug it into the wall outlet.
       </section>
 
       <section>
@@ -74,6 +133,37 @@
 
           Please provide a summary of the student's information.
         -->
+        <table>
+          <caption> table of student's information</caption>
+          <thead>
+            <tr>
+              <th scope="col" id="header_name">Name</th>
+              <th scope="col" id="header_age">Age</th>
+              <th scope="col" id="header_weight">weight</th>
+              <th scope="col" id="header_height">Height</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th headers="header_name" scope="row" id="row_fred">Fred</th>
+              <td headers="row_fred header_age">23</td>
+              <td headers="row_fred header_weight">74kg</td>
+              <td headers="row_fred header_height">182cm</td>
+            </tr>
+            <tr>
+              <th headers="header_name" scope="row" id="row_anne">Anne</th>
+              <td headers="row_anne header_age">26</td>
+              <td headers="row_anne header_weight">56kg</td>
+              <td headers="row_anne header_height">173cm</td>
+            </tr>
+            <tr>
+              <th headers="header_name" scope="row" id="row_judith">Judith</th>
+              <td headers="row_judith header_age">19</td>
+              <td headers="row_judith header_weight">51kg</td>
+              <td headers="row_judith header_height">168cm</td>
+            </tr>
+          </tbody>
+          </table>
       </section>
 
       <section>
@@ -111,6 +201,7 @@
             Excerpt:
               Develop your critical thinking skills. Boost your ability to solve problems and make the right decisions at work, home and in study.
         -->
+       <a href="search.html">search page</a>
       </section>
       <section>
         <h2>A definition</h2>
@@ -118,6 +209,53 @@
           6. Create the HTML necessary for the image `markup.png` in this folder.
           It is a definition of the word 'Markup'.
         -->
+        <b>
+          markup
+        </b><br>
+        /'m&#593;:k&#x028c;p/
+        <br>
+        <i>
+          noun
+        </i>
+       <br>
+       noun:
+        <b>
+          markup;
+        </b>
+        plural noun:
+        <b>
+          markups;
+        </b>
+        noun:
+        <b>
+          mark-up;
+        </b>
+        plural noun;
+        <b>
+          mark-ups
+        </b>
+          <ol>
+            <li>
+              <b>
+                the amount added to the cost price of goods to cover overheads and profit.<br>
+              </b>
+                "a markup of 50 percent"
+          </li>
+          <li>
+            <b>
+              the process or result of correcting text in preparation for printing.
+            </b>
+          </li>
+          <li>
+            <kbd>
+              COMPUTING
+            </kbd>
+            <b><br>
+              a set of tags assigned to elements of a text to indicate their relation to the rest of the text or dictacte how they should be displayed.
+            </b><br>
+            "markup languages"
+          </li>
+        </ol>
         <img src="markup.png" alt="There are three definitions for the word 'Markup'">
       </section>
 
