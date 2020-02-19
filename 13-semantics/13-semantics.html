@@ -24,12 +24,14 @@
             - "About us" links to "/about"
             - "Contact us" links to "/contact"
         -->
+      <nav>
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/services">Our services</a></li>
           <li><a href="/about">About us</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
+      </nav>
       </section>
 
       <section>
@@ -47,7 +49,7 @@
               - Prefer to not disclose, "na"
             - Photo, optional, as "profile_photo". The user can upload a photo if they want. We only accept PNGs, JPGs, and WebP formats.
         -->
-        <form action="profile/save" method="POST"></form>
+        <form action="profile/save" method="POST" enctype="multipart/form-data"></form>
           <p>
             <label>
               Profile_first_name:
@@ -60,7 +62,9 @@
             </label>
           </p>
           <p>
+            <label>
               Email:
+            </label>
             <br><input type="email" name="username" required>
           </p>
           <p>
@@ -73,7 +77,7 @@
           <ul>
             <li>
               <label>
-                <input type="radio" name="m">
+                <input type="radio" name="genre" value="m">
                   Male
               </label>
             </li>
@@ -81,7 +85,7 @@
           <ul>
             <li>
               <label>
-                <input type="radio" name="f">
+                <input type="radio" name="genre" value="f">
                   Famale
               </label>
             </li>
@@ -89,7 +93,7 @@
           <ul>
             <li>
               <label>
-                <input type="radio" name="na">
+                <input type="radio" name="genre" value="na">
                   Prefer to not disclose
               </label>
             </li>
@@ -97,6 +101,12 @@
       <small>
          You can choose genre here
       </small>
+      <p>
+        Photo:<br>
+      <label>
+        <input type="file" name="profile_photo" accept="image/png, image/jpeg, image/webp">
+      </label>
+      </p>
       </section>
       <section>
         <h2>An excerpt</h2>
@@ -109,6 +119,8 @@
 
           "If you weren't my mother, this would be illegal," you'll say, seething as you unwind the power cord and plug it into the wall outlet.
         -->
+        <blockquote>
+          <p>
              <q>The only reason you had me was so you could get a maid you wouldn't have to pay,</q>
               you'll say bitterly, dragging the vacuum cleaner out of the closet.<br>
             <q>That's right!</q> I'll say. <q>Thirteen years ago I knew the carpets would need vacuuming around now, and having a baby seemed to be the cheapest and easiest way to get the job done. Now kindly get on with it.</q><br>
@@ -201,7 +213,9 @@
             Excerpt:
               Develop your critical thinking skills. Boost your ability to solve problems and make the right decisions at work, home and in study.
         -->
+        <p>
        <a href="search.html">search page</a>
+        </p>
       </section>
       <section>
         <h2>A definition</h2>
